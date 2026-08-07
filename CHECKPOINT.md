@@ -4,10 +4,10 @@
 
 | Campo | Valor |
 |-------|--------|
-| **Quando** | 2026-08-07 15:10:34 -03 |
-| **ISO** | 2026-08-07T15:10:34-03:00 |
+| **Quando** | 2026-08-07 15:12:38 -03 |
+| **ISO** | 2026-08-07T15:12:38-03:00 |
 | **Host writer** | henrique-Inspiron-15-3520 |
-| **Load** | 0.15 0.20 0.24 |
+| **Load** | 0.02 0.13 0.21 |
 | **Site /** | HTTP 302 (esperado **302** sem cookie) |
 | **Login** | HTTP 200 (esperado **200**) |
 | **API health** | HTTP 200 (esperado **200**) |
