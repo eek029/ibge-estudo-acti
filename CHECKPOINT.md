@@ -4,10 +4,10 @@
 
 | Campo | Valor |
 |-------|--------|
-| **Quando** | 2026-08-07 11:41:43 -03 |
-| **ISO** | 2026-08-07T11:41:43-03:00 |
+| **Quando** | 2026-08-07 11:42:06 -03 |
+| **ISO** | 2026-08-07T11:42:06-03:00 |
 | **Host writer** | henrique-Inspiron-15-3520 |
-| **Load** | 0.95 1.11 1.18 |
+| **Load** | 1.18 1.15 1.19 |
 | **Site /** | HTTP 302 (esperado **302** sem cookie) |
 | **Login** | HTTP 200 (esperado **200**) |
 | **API health** | HTTP 200 (esperado **200**) |
@@ -40,4 +40,4 @@
 Ler handoff no vault → `git pull` neste repo → ver se site 302/200 ok → executar backlog Argos/Atlas.
 
 ---
-*checkpoint interval 120s · until 2026-08-07 11:41 -03*
+*checkpoint interval 120s · until 2026-08-07 15:42 -03*
