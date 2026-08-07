@@ -105,13 +105,16 @@
 <body>
   <main class="card">
     <div class="brand">IBGE <span>AC-TI</span></div>
-    <div class="eyebrow">Acesso restrito</div>
+    <div class="eyebrow">Acesso individual</div>
     <h1>Área de estudo</h1>
-    <p>Entre com a senha para continuar — aulas, quizzes e PDFs ficam atrás desta porta.</p>
+    <p>Cada pessoa tem <strong style="color:var(--text)">usuário e senha</strong> próprios — o progresso fica separado.</p>
     <div class="err" id="err" role="alert"></div>
-    <form id="form" autocomplete="current-password">
+    <form id="form" autocomplete="on">
+      <label for="user">Usuário</label>
+      <input id="user" name="username" type="text" required autofocus
+             autocomplete="username" placeholder="ex.: henrique" spellcheck="false" />
       <label for="password">Senha</label>
-      <input id="password" name="password" type="password" required autofocus
+      <input id="password" name="password" type="password" required
              autocomplete="current-password" placeholder="••••••••" />
       <div class="row">
         <input type="checkbox" id="show" />
@@ -125,6 +128,7 @@
     const form = document.getElementById("form");
     const err = document.getElementById("err");
     const btn = document.getElementById("btn");
+    const user = document.getElementById("user");
     const pwd = document.getElementById("password");
     document.getElementById("show").addEventListener("change", (e) => {
       pwd.type = e.target.checked ? "text" : "password";
@@ -143,7 +147,7 @@
           method: "POST",
           credentials: "include",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ password: pwd.value }),
+          body: JSON.stringify({ user: user.value.trim(), password: pwd.value }),
         });
         const data = await res.json().catch(() => ({}));
         if (!res.ok) {
@@ -153,6 +157,12 @@
           btn.textContent = "Entrar";
           return;
         }
+        // isolate local progress per user
+        try {
+          if (data.user && data.user.id) {
+            localStorage.setItem("ibge-acti-user", data.user.id);
+          }
+        } catch (_) {}
         const next = new URLSearchParams(location.search).get("next") || "/";
         location.replace(next.startsWith("/") ? next : "/");
       } catch {

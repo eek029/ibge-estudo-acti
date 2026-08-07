@@ -55,3 +55,16 @@ Issues e PRs são bem-vindos: mais questões, correções de conteúdo, melhoria
 ## Licença
 
 Código: **MIT**. Editais: documentos públicos oficiais do IBGE.
+
+## Multi-usuário
+
+Cada pessoa entra com **usuário + senha**. Progresso fica em `server/data/progress/<id>.json`.
+
+```bash
+cd server
+# configure ibge-progress.env (SESSION_SECRET obrigatório)
+python3 add_user.py maria 'SenhaForte' 'Maria'
+python3 app.py
+```
+
+Login em `/login.html`. Não commite `data/users.json` nem progresso real.

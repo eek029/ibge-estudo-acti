@@ -1,7 +1,6 @@
-/* IBGE AC-TI — multi-user multi-device study app */
+/* IBGE AC-TI — multi-device study app */
 (function () {
-  const STORE_PREFIX = "ibge-acti-progress-v2:";
-  const USER_KEY = "ibge-acti-user";
+  const STORE_KEY = "ibge-acti-progress-v1";
   const LETTERS = ["A", "B", "C", "D", "E"];
 
   const state = {
@@ -10,9 +9,8 @@
     schedule: null,
     biblioteca: null,
     config: { syncEnabled: false, apiBase: "/api", token: "" },
-    user: null,
     view: "home",
-    progress: defaultProgress(),
+    progress: loadProgress(),
     quiz: null,
     flash: null,
     lessonFilter: "all",
@@ -20,13 +18,10 @@
     sync: { status: "local", lastOk: null, error: null, timer: null },
   };
 
-  /* ---------- progress storage (per user) ---------- */
-  function storeKey(userId) {
-    return STORE_PREFIX + (userId || "anon");
-  }
-  function loadProgressFor(userId) {
+  /* ---------- progress storage ---------- */
+  function loadProgress() {
     try {
-      return JSON.parse(localStorage.getItem(storeKey(userId))) || defaultProgress();
+      return JSON.parse(localStorage.getItem(STORE_KEY)) || defaultProgress();
     } catch {
       return defaultProgress();
     }
@@ -38,8 +33,7 @@
     state.progress.updatedAt = Date.now();
   }
   function saveProgressLocal() {
-    const uid = (state.user && state.user.id) || localStorage.getItem(USER_KEY) || "anon";
-    localStorage.setItem(storeKey(uid), JSON.stringify(state.progress));
+    localStorage.setItem(STORE_KEY, JSON.stringify(state.progress));
   }
   function saveProgress() {
     touchProgress();
@@ -62,32 +56,10 @@
         location.replace("/login.html");
         return false;
       }
-      if (!res.ok) return false;
-      const data = await res.json();
-      if (data && data.user) {
-        state.user = data.user;
-        try {
-          localStorage.setItem(USER_KEY, data.user.id);
-        } catch (_) {}
-        // load this user's local cache before server merge
-        state.progress = loadProgressFor(data.user.id);
-        updateUserPill();
-      }
-      return true;
+      return res.ok;
     } catch {
+      // if API down but page loaded via forward_auth, continue offline-ish
       return true;
-    }
-  }
-
-  function updateUserPill() {
-    const el = document.getElementById("user-pill");
-    if (!el) return;
-    if (state.user) {
-      el.textContent = state.user.name || state.user.id;
-      el.title = "Logado como @" + state.user.id;
-      el.classList.remove("hidden");
-    } else {
-      el.classList.add("hidden");
     }
   }
 
@@ -177,12 +149,10 @@
     bindNav();
     bindGlobalKeys();
     bindLogout();
-    updateUserPill();
     updateSyncPill();
     await syncPullAndMerge();
 
     renderAll();
-    updateUserPill();
     const v = new URLSearchParams(location.search).get("view");
     if (v) showView(v);
 
@@ -207,10 +177,6 @@
     btn.onclick = async () => {
       try {
         await fetch("/api/auth/logout", { method: "POST", credentials: "include" });
-      } catch (_) {}
-      // keep per-user local cache; just clear active user pointer
-      try {
-        localStorage.removeItem(USER_KEY);
       } catch (_) {}
       location.replace("/login.html");
     };
