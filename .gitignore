@@ -1,0 +1,5 @@
+server/data/
+server/ibge-progress.env
+public/data/config.local.json
+.DS_Store
+node_modules/

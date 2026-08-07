@@ -1,0 +1,382 @@
+{
+  "meta": {
+    "examDate": "2026-08-30",
+    "examLabel": "Prova objetiva — Analista Censitário TI (tarde)",
+    "startDate": "2026-08-07",
+    "endDate": "2026-08-29",
+    "banco": "Instituto Avalia",
+    "goal": "≥24/60 e ≥1 ponto em cada disciplina"
+  },
+  "days": [
+    {
+      "date": "2026-08-07",
+      "day": 1,
+      "title": "Fundação — Projetos PMBOK",
+      "lessons": [
+        "ti-pmbok"
+      ],
+      "quizCats": [
+        "ti"
+      ],
+      "quizTopic": "pmbok",
+      "quizCount": 20,
+      "notes": "Ler aula de projetos; quiz TI (tema PMBOK). PT leve 15 min.",
+      "examDay": false
+    },
+    {
+      "date": "2026-08-08",
+      "day": 2,
+      "title": "Fundação — Riscos e EVM",
+      "lessons": [
+        "ti-riscos"
+      ],
+      "quizCats": [
+        "ti"
+      ],
+      "quizTopic": "riscos",
+      "quizCount": 20,
+      "notes": "Riscos + indicadores CPI/SPI; quiz. RL: conectivos 20 min.",
+      "examDay": false
+    },
+    {
+      "date": "2026-08-09",
+      "day": 3,
+      "title": "Fundação — COBIT/ITIL (1ª)",
+      "lessons": [
+        "ti-fw"
+      ],
+      "quizCats": [
+        "ti"
+      ],
+      "quizTopic": "frameworks",
+      "quizCount": 20,
+      "notes": "Primeira leitura COBIT+ITIL; grifar diferenças.",
+      "examDay": false
+    },
+    {
+      "date": "2026-08-10",
+      "day": 4,
+      "title": "Fundação — Governança e SLA",
+      "lessons": [
+        "ti-gov"
+      ],
+      "quizCats": [
+        "ti"
+      ],
+      "quizTopic": "governanca",
+      "quizCount": 20,
+      "notes": "Incidente×problema×mudança; SLA/OLA/UC.",
+      "examDay": false
+    },
+    {
+      "date": "2026-08-11",
+      "day": 5,
+      "title": "Fundação — COBIT/ITIL (2ª) + revisão",
+      "lessons": [
+        "ti-fw",
+        "ti-gov"
+      ],
+      "quizCats": [
+        "ti"
+      ],
+      "quizTopic": null,
+      "quizCount": 20,
+      "notes": "Releitura frameworks + quiz misto governança.",
+      "examDay": false
+    },
+    {
+      "date": "2026-08-12",
+      "day": 6,
+      "title": "Fundação — Segurança da informação",
+      "lessons": [
+        "ti-sec"
+      ],
+      "quizCats": [
+        "ti"
+      ],
+      "quizTopic": "seguranca",
+      "quizCount": 20,
+      "notes": "CIA, acesso, cripto, incidentes, RTO/RPO.",
+      "examDay": false
+    },
+    {
+      "date": "2026-08-13",
+      "day": 7,
+      "title": "Revisão semanal 1",
+      "lessons": [
+        "mapa",
+        "ti-pmbok",
+        "ti-riscos"
+      ],
+      "quizCats": [
+        "ti",
+        "pt",
+        "rl"
+      ],
+      "quizTopic": null,
+      "quizCount": 20,
+      "notes": "Quiz misto 25 questões; revisar erros.",
+      "examDay": false
+    },
+    {
+      "date": "2026-08-14",
+      "day": 8,
+      "title": "ISO 27001 · NIST · LGPD",
+      "lessons": [
+        "ti-iso"
+      ],
+      "quizCats": [
+        "ti"
+      ],
+      "quizTopic": "normas",
+      "quizCount": 20,
+      "notes": "SGSI, CSF, titular/controlador/operador.",
+      "examDay": false
+    },
+    {
+      "date": "2026-08-15",
+      "day": 9,
+      "title": "Gestão estratégica de TI",
+      "lessons": [
+        "ti-gest"
+      ],
+      "quizCats": [
+        "ti"
+      ],
+      "quizTopic": "gestao",
+      "quizCount": 20,
+      "notes": "PETI, portfólio, maturidade, KPIs.",
+      "examDay": false
+    },
+    {
+      "date": "2026-08-16",
+      "day": 10,
+      "title": "Cruzado: frameworks + governança",
+      "lessons": [
+        "ti-fw",
+        "ti-gov"
+      ],
+      "quizCats": [
+        "ti"
+      ],
+      "quizTopic": null,
+      "quizCount": 20,
+      "notes": "Só questões \"qual framework?\".",
+      "examDay": false
+    },
+    {
+      "date": "2026-08-17",
+      "day": 11,
+      "title": "Cruzado: segurança + LGPD + 27001",
+      "lessons": [
+        "ti-sec",
+        "ti-iso"
+      ],
+      "quizCats": [
+        "ti"
+      ],
+      "quizTopic": null,
+      "quizCount": 20,
+      "notes": "Quiz segurança+normas; PT 20 min.",
+      "examDay": false
+    },
+    {
+      "date": "2026-08-18",
+      "day": 12,
+      "title": "PMBOK + riscos (reforço)",
+      "lessons": [
+        "ti-pmbok",
+        "ti-riscos"
+      ],
+      "quizCats": [
+        "ti"
+      ],
+      "quizTopic": null,
+      "quizCount": 20,
+      "notes": "Checklist PMBOK; 15 q TI.",
+      "examDay": false
+    },
+    {
+      "date": "2026-08-19",
+      "day": 13,
+      "title": "Mapa mental de específicos",
+      "lessons": [
+        "ti-idx",
+        "cola"
+      ],
+      "quizCats": [
+        "ti"
+      ],
+      "quizTopic": null,
+      "quizCount": 20,
+      "notes": "Resumir os 7 blocos em 1 página (papel ou nota).",
+      "examDay": false
+    },
+    {
+      "date": "2026-08-20",
+      "day": 14,
+      "title": "Simulado parcial 1",
+      "lessons": [
+        "mapa"
+      ],
+      "quizCats": [
+        "ti",
+        "pt",
+        "rl"
+      ],
+      "quizTopic": null,
+      "quizCount": 20,
+      "notes": "35 TI + 10 PT + 10 RL (modo simulado no app). Meta ≥60%.",
+      "examDay": false
+    },
+    {
+      "date": "2026-08-21",
+      "day": 15,
+      "title": "Corrigir simulado 1 + fracos",
+      "lessons": [
+        "cola"
+      ],
+      "quizCats": [
+        "ti",
+        "pt",
+        "rl"
+      ],
+      "quizTopic": null,
+      "quizCount": 20,
+      "notes": "Reestudar só temas errados do simulado.",
+      "examDay": false
+    },
+    {
+      "date": "2026-08-22",
+      "day": 16,
+      "title": "Intensivo ITIL/COBIT/SLA",
+      "lessons": [
+        "ti-fw",
+        "ti-gov"
+      ],
+      "quizCats": [
+        "ti"
+      ],
+      "quizTopic": null,
+      "quizCount": 20,
+      "notes": "Quiz frameworks+governança até acertar 80%.",
+      "examDay": false
+    },
+    {
+      "date": "2026-08-23",
+      "day": 17,
+      "title": "Intensivo segurança+LGPD",
+      "lessons": [
+        "ti-sec",
+        "ti-iso"
+      ],
+      "quizCats": [
+        "ti"
+      ],
+      "quizTopic": null,
+      "quizCount": 20,
+      "notes": "Repetir quiz; decorar NIST 5 funções.",
+      "examDay": false
+    },
+    {
+      "date": "2026-08-24",
+      "day": 18,
+      "title": "Intensivo PMBOK+riscos",
+      "lessons": [
+        "ti-pmbok",
+        "ti-riscos"
+      ],
+      "quizCats": [
+        "ti"
+      ],
+      "quizTopic": null,
+      "quizCount": 20,
+      "notes": "Canais de comunicação, EVM, estratégias de risco.",
+      "examDay": false
+    },
+    {
+      "date": "2026-08-25",
+      "day": 19,
+      "title": "PT + RL só questões",
+      "lessons": [
+        "pt",
+        "rl"
+      ],
+      "quizCats": [
+        "pt",
+        "rl"
+      ],
+      "quizTopic": null,
+      "quizCount": 20,
+      "notes": "Banco PT/RL + PDFs da biblioteca se quiser.",
+      "examDay": false
+    },
+    {
+      "date": "2026-08-26",
+      "day": 20,
+      "title": "Simulado completo 2",
+      "lessons": [
+        "mapa"
+      ],
+      "quizCats": [
+        "ti",
+        "pt",
+        "rl"
+      ],
+      "quizTopic": null,
+      "quizCount": 20,
+      "notes": "60 questões cronometradas (~3h30). Correção no mesmo dia.",
+      "examDay": false
+    },
+    {
+      "date": "2026-08-27",
+      "day": 21,
+      "title": "Correção simulado 2",
+      "lessons": [
+        "cola"
+      ],
+      "quizCats": [
+        "ti",
+        "pt",
+        "rl"
+      ],
+      "quizTopic": null,
+      "quizCount": 10,
+      "notes": "Lista \"não erro de novo\"; revisar checklists.",
+      "examDay": false
+    },
+    {
+      "date": "2026-08-28",
+      "day": 22,
+      "title": "Revisão ativa — checklists TI",
+      "lessons": [
+        "ti-idx",
+        "cola"
+      ],
+      "quizCats": [
+        "ti"
+      ],
+      "quizTopic": null,
+      "quizCount": 10,
+      "notes": "Fechar tela e recitar: ITIL×COBIT×27001×PMBOK.",
+      "examDay": false
+    },
+    {
+      "date": "2026-08-29",
+      "day": 23,
+      "title": "Véspera — leve",
+      "lessons": [
+        "cola"
+      ],
+      "quizCats": [
+        "ti",
+        "pt",
+        "rl"
+      ],
+      "quizTopic": null,
+      "quizCount": 10,
+      "notes": "Só cola rápida + 10 q leves. Documentos da prova. Dormir cedo.",
+      "examDay": false
+    }
+  ]
+}

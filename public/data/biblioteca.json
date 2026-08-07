@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "note": "Repositório público: apenas editais oficiais IBGE. Aulas interativas e quizzes são originais. PDFs de cursinho não são redistribuídos."
+  },
+  "labels": {
+    "editais": "Editais oficiais (IBGE)"
+  },
+  "editais": [
+    {
+      "file": "materiais/editais/02_2026_1a_Retificacao.pdf",
+      "title": "02 2026 1a Retificacao",
+      "id": "02_2026_1a_Retificacao",
+      "sizeKb": 101
+    },
+    {
+      "file": "materiais/editais/Edital_2_2026_AC_ACQ_Conteudos_Programaticos.pdf",
+      "title": "Edital 2 2026 AC ACQ Conteudos Programaticos",
+      "id": "Edital_2_2026_AC_ACQ_Conteudos_Programaticos",
+      "sizeKb": 269
+    },
+    {
+      "file": "materiais/editais/Edital_2_2026_AC_ACQ_Cronograma_previsto.pdf",
+      "title": "Edital 2 2026 AC ACQ Cronograma previsto",
+      "id": "Edital_2_2026_AC_ACQ_Cronograma_previsto",
+      "sizeKb": 159
+    },
+    {
+      "file": "materiais/editais/Edital_2_2026_AC_ACQ_Edital_de_Abertura.pdf",
+      "title": "Edital 2 2026 AC ACQ Edital de Abertura",
+      "id": "Edital_2_2026_AC_ACQ_Edital_de_Abertura",
+      "sizeKb": 343
+    },
+    {
+      "file": "materiais/editais/Edital_2_2026_AC_ACQ_Quadro_de_vagas.pdf",
+      "title": "Edital 2 2026 AC ACQ Quadro de vagas",
+      "id": "Edital_2_2026_AC_ACQ_Quadro_de_vagas",
+      "sizeKb": 481
+    },
+    {
+      "file": "materiais/editais/Edital_2_2026_AC_ACQ_Requisitos_e_Atribuicoes.pdf",
+      "title": "Edital 2 2026 AC ACQ Requisitos e Atribuicoes",
+      "id": "Edital_2_2026_AC_ACQ_Requisitos_e_Atribuicoes",
+      "sizeKb": 192
+    }
+  ],
+  "apostilas": [],
+  "compilados": [],
+  "pt": [],
+  "rl": [],
+  "provas": []
+}

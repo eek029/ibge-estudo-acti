@@ -1,0 +1,6 @@
+{
+  "syncEnabled": false,
+  "apiBase": "/api",
+  "token": "",
+  "syncLabel": "Self-host: ative sync no config.json se quiser multi-dispositivo"
+}

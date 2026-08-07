@@ -1,0 +1,1304 @@
+[
+  {
+    "cat": "ti",
+    "topic": "pmbok",
+    "q": "Um projeto, segundo o PMI, caracteriza-se principalmente por ser:",
+    "options": [
+      "Trabalho contínuo e repetitivo",
+      "Esforço temporário para criar um resultado único",
+      "Conjunto de operações de rotina",
+      "Somente atividades de manutenção"
+    ],
+    "a": 1,
+    "exp": "Projeto = temporário + único. Operação é contínua.",
+    "id": "q001"
+  },
+  {
+    "cat": "ti",
+    "topic": "pmbok",
+    "q": "A diferença principal entre programa e portfólio é:",
+    "options": [
+      "Programa agrupa projetos relacionados; portfólio alinha iniciativas à estratégia",
+      "Portfólio é menor que um projeto",
+      "Programa não tem gestão coordenada",
+      "Não há diferença"
+    ],
+    "a": 0,
+    "exp": "Programa = projetos relacionados; portfólio = visão estratégica.",
+    "id": "q002"
+  },
+  {
+    "cat": "ti",
+    "topic": "pmbok",
+    "q": "Qual grupo de processos ocorre ao longo de todo o projeto, medindo desempenho e acionando correções?",
+    "options": [
+      "Iniciação",
+      "Planejamento",
+      "Monitoramento e controle",
+      "Encerramento"
+    ],
+    "a": 2,
+    "exp": "Monitoramento e controle perpassa o ciclo de vida.",
+    "id": "q003"
+  },
+  {
+    "cat": "ti",
+    "topic": "pmbok",
+    "q": "A EAP (WBS) é usada principalmente para:",
+    "options": [
+      "Decompor o trabalho do projeto em pacotes gerenciáveis",
+      "Calcular o CPI",
+      "Substituir o termo de abertura",
+      "Definir o SLA com o cliente"
+    ],
+    "a": 0,
+    "exp": "WBS decompõe o escopo do projeto.",
+    "id": "q004"
+  },
+  {
+    "cat": "ti",
+    "topic": "pmbok",
+    "q": "O termo de abertura (project charter) tem como função típica:",
+    "options": [
+      "Detalhar o cronograma dia a dia",
+      "Autorizar formalmente o projeto e nomear o gerente",
+      "Substituir o contrato com fornecedor",
+      "Ser a baseline de custo"
+    ],
+    "a": 1,
+    "exp": "Charter autoriza o projeto e designa o GP.",
+    "id": "q005"
+  },
+  {
+    "cat": "ti",
+    "topic": "pmbok",
+    "q": "Com 6 pessoas na equipe de comunicação, o número de canais de comunicação é:",
+    "options": [
+      "6",
+      "12",
+      "15",
+      "30"
+    ],
+    "a": 2,
+    "exp": "n(n-1)/2 = 6*5/2 = 15.",
+    "id": "q006"
+  },
+  {
+    "cat": "ti",
+    "topic": "pmbok",
+    "q": "Scope creep refere-se a:",
+    "options": [
+      "Redução planejada de escopo",
+      "Aumento descontrolado de escopo",
+      "Melhoria de qualidade",
+      "Transferência de risco"
+    ],
+    "a": 1,
+    "exp": "Crescimento não controlado do escopo.",
+    "id": "q007"
+  },
+  {
+    "cat": "ti",
+    "topic": "pmbok",
+    "q": "A baseline de custo serve para:",
+    "options": [
+      "Substituir a reserva de contingência",
+      "Referência para medir desempenho de custos",
+      "Eliminar riscos desconhecidos",
+      "Definir o RTO"
+    ],
+    "a": 1,
+    "exp": "Baseline = referência congelada para variação.",
+    "id": "q008"
+  },
+  {
+    "cat": "ti",
+    "topic": "riscos",
+    "q": "Um risco difere de um problema porque o risco:",
+    "options": [
+      "Já ocorreu e precisa de correção",
+      "É um evento incerto que pode afetar objetivos",
+      "Sempre é negativo",
+      "Não precisa de registro"
+    ],
+    "a": 1,
+    "exp": "Risco = incerteza; problema = já ocorreu.",
+    "id": "q009"
+  },
+  {
+    "cat": "ti",
+    "topic": "riscos",
+    "q": "A estratégia de TRANSFERIR um risco negativo significa:",
+    "options": [
+      "Eliminar a causa do risco",
+      "Passar o impacto a terceiro (ex.: seguro/contrato)",
+      "Ignorar o risco",
+      "Garantir que a oportunidade ocorra"
+    ],
+    "a": 1,
+    "exp": "Transferência desloca impacto/responsabilidade.",
+    "id": "q010"
+  },
+  {
+    "cat": "ti",
+    "topic": "riscos",
+    "q": "Reserva de contingência é usada tipicamente para:",
+    "options": [
+      "Riscos conhecidos/identificados",
+      "Riscos totalmente desconhecidos (unknown unknowns)",
+      "Somente oportunidades",
+      "Substituir o orçamento total"
+    ],
+    "a": 0,
+    "exp": "Contingência cobre riscos conhecidos.",
+    "id": "q011"
+  },
+  {
+    "cat": "ti",
+    "topic": "riscos",
+    "q": "Se EV = 80, AC = 100, o CPI é:",
+    "options": [
+      "1,25",
+      "0,80",
+      "20",
+      "180"
+    ],
+    "a": 1,
+    "exp": "CPI = EV/AC = 0,8 (<1 custo ruim).",
+    "id": "q012"
+  },
+  {
+    "cat": "ti",
+    "topic": "riscos",
+    "q": "SPI < 1 indica, em regra:",
+    "options": [
+      "Desempenho de prazo/valor aquém do planejado",
+      "Custo melhor que o planejado",
+      "Projeto sem riscos",
+      "Baseline inexistente"
+    ],
+    "a": 0,
+    "exp": "SPI = EV/PV; <1 = atraso no valor agregado.",
+    "id": "q013"
+  },
+  {
+    "cat": "ti",
+    "topic": "riscos",
+    "q": "Aceitar um risco de forma ativa implica:",
+    "options": [
+      "Não fazer nada",
+      "Preparar plano/reserva de contingência",
+      "Transferir sempre para o fornecedor",
+      "Cancelar o projeto"
+    ],
+    "a": 1,
+    "exp": "Aceitação ativa = contingência preparada.",
+    "id": "q014"
+  },
+  {
+    "cat": "ti",
+    "topic": "seguranca",
+    "q": "No contexto do edital, o princípio de CONFIDENCIALIDADE garante que:",
+    "options": [
+      "O serviço esteja sempre no ar",
+      "Apenas autorizados acessem a informação",
+      "O dado não seja alterado",
+      "A origem da mensagem seja comprovada"
+    ],
+    "a": 1,
+    "exp": "Confidencialidade = acesso só por quem deve.",
+    "id": "q015"
+  },
+  {
+    "cat": "ti",
+    "topic": "seguranca",
+    "q": "Integridade da informação significa:",
+    "options": [
+      "Criptografar com chave simétrica",
+      "Não alteração indevida do dado",
+      "Disponibilidade 24x7",
+      "Anonimização LGPD"
+    ],
+    "a": 1,
+    "exp": "Integridade = dado íntegro/confiável.",
+    "id": "q016"
+  },
+  {
+    "cat": "ti",
+    "topic": "seguranca",
+    "q": "Disponibilidade está mais relacionada a:",
+    "options": [
+      "Hash SHA-256",
+      "Redundância, backup e proteção a DDoS",
+      "Classificação de dados",
+      "Assinatura digital"
+    ],
+    "a": 1,
+    "exp": "Disponibilidade = serviço acessível quando necessário.",
+    "id": "q017"
+  },
+  {
+    "cat": "ti",
+    "topic": "seguranca",
+    "q": "RBAC é um modelo de controle de acesso baseado em:",
+    "options": [
+      "Atributos contextuais apenas",
+      "Papéis/funções do usuário",
+      "Decisão exclusiva do dono do arquivo",
+      "Rótulos militares obrigatórios"
+    ],
+    "a": 1,
+    "exp": "RBAC = Role-Based Access Control.",
+    "id": "q018"
+  },
+  {
+    "cat": "ti",
+    "topic": "seguranca",
+    "q": "Criptografia assimétrica usa:",
+    "options": [
+      "A mesma chave para cifrar e decifrar",
+      "Par de chaves pública e privada",
+      "Apenas hash",
+      "Somente AES"
+    ],
+    "a": 1,
+    "exp": "Assimétrica = par público/privado.",
+    "id": "q019"
+  },
+  {
+    "cat": "ti",
+    "topic": "seguranca",
+    "q": "Hash criptográfico serve principalmente para:",
+    "options": [
+      "Cifrar para depois decifrar",
+      "Verificar integridade (não reversível)",
+      "Substituir MFA",
+      "Gerar certificados ICP-Brasil sozinho"
+    ],
+    "a": 1,
+    "exp": "Hash é one-way; detecta alteração.",
+    "id": "q020"
+  },
+  {
+    "cat": "ti",
+    "topic": "seguranca",
+    "q": "A ordem típica de resposta a incidente inclui:",
+    "options": [
+      "Recuperar → detectar → ignorar",
+      "Preparar → detectar → conter → erradicar → recuperar → lições",
+      "Só apagar logs",
+      "Somente multa LGPD"
+    ],
+    "a": 1,
+    "exp": "Ciclo clássico de incident response.",
+    "id": "q021"
+  },
+  {
+    "cat": "ti",
+    "topic": "seguranca",
+    "q": "RTO significa:",
+    "options": [
+      "Perda máxima de dados aceitável",
+      "Tempo máximo aceitável para recuperar o serviço",
+      "Tipo de backup",
+      "Nível de SLA de custo"
+    ],
+    "a": 1,
+    "exp": "RTO = Recovery Time Objective.",
+    "id": "q022"
+  },
+  {
+    "cat": "ti",
+    "topic": "seguranca",
+    "q": "RPO refere-se a:",
+    "options": [
+      "Tempo de restauração do serviço",
+      "Quantidade de perda de dados aceitável (em tempo)",
+      "Número de incidentes",
+      "Custo do projeto"
+    ],
+    "a": 1,
+    "exp": "RPO = Recovery Point Objective.",
+    "id": "q023"
+  },
+  {
+    "cat": "ti",
+    "topic": "seguranca",
+    "q": "BCP difere de DRP porque BCP foca em:",
+    "options": [
+      "Apenas servidores de banco",
+      "Continuidade do negócio como um todo",
+      "Somente backup em fita",
+      "Criptografia de disco"
+    ],
+    "a": 0,
+    "exp": "BCP = negócio; DRP = recuperação de TI.",
+    "id": "q024"
+  },
+  {
+    "cat": "ti",
+    "topic": "normas",
+    "q": "A ISO/IEC 27001 trata principalmente de:",
+    "options": [
+      "Gestão de projetos",
+      "Sistema de Gestão de Segurança da Informação (SGSI)",
+      "Service desk",
+      "Desenvolvimento web"
+    ],
+    "a": 1,
+    "exp": "27001 = SGSI certificável.",
+    "id": "q025"
+  },
+  {
+    "cat": "ti",
+    "topic": "normas",
+    "q": "A ISO/IEC 27002, em relação à 27001, é tipicamente:",
+    "options": [
+      "A norma de certificação do SGSI",
+      "Guia de boas práticas/controles",
+      "Framework de governança COBIT",
+      "Lei brasileira"
+    ],
+    "a": 1,
+    "exp": "27002 guia implementação de controles.",
+    "id": "q026"
+  },
+  {
+    "cat": "ti",
+    "topic": "normas",
+    "q": "O ciclo PDCA no SGSI corresponde a:",
+    "options": [
+      "Plan-Do-Check-Act",
+      "Push-Deploy-Commit-Approve",
+      "Print-Delete-Copy-Archive",
+      "Prevent-Detect-Contain-Attack"
+    ],
+    "a": 0,
+    "exp": "PDCA clássico.",
+    "id": "q027"
+  },
+  {
+    "cat": "ti",
+    "topic": "normas",
+    "q": "As cinco funções do NIST Cybersecurity Framework são:",
+    "options": [
+      "Plan, Build, Run, Monitor, Close",
+      "Identify, Protect, Detect, Respond, Recover",
+      "CIA, AAA, VPN, IDS, IPS",
+      "EDM e PBRM"
+    ],
+    "a": 1,
+    "exp": "Identify-Protect-Detect-Respond-Recover.",
+    "id": "q028"
+  },
+  {
+    "cat": "ti",
+    "topic": "normas",
+    "q": "Na LGPD, o CONTROLADOR é:",
+    "options": [
+      "Quem trata dados só sob instrução",
+      "Quem toma as decisões sobre o tratamento",
+      "A ANPD",
+      "O titular dos dados"
+    ],
+    "a": 1,
+    "exp": "Controlador decide finalidades/meios.",
+    "id": "q029"
+  },
+  {
+    "cat": "ti",
+    "topic": "normas",
+    "q": "O OPERADOR, na LGPD:",
+    "options": [
+      "Define as bases legais sozinho",
+      "Trata dados em nome do controlador",
+      "É sempre a ANPD",
+      "É o titular"
+    ],
+    "a": 1,
+    "exp": "Operador age em nome do controlador.",
+    "id": "q030"
+  },
+  {
+    "cat": "ti",
+    "topic": "normas",
+    "q": "Dado sensível, pela LGPD, inclui tipicamente:",
+    "options": [
+      "Nome e e-mail comercial apenas",
+      "Dados de saúde, biometria, origem racial, religião etc.",
+      "Somente CNPJ",
+      "Endereço IP público sempre"
+    ],
+    "a": 1,
+    "exp": "Rol de dados sensíveis no art. 5º.",
+    "id": "q031"
+  },
+  {
+    "cat": "ti",
+    "topic": "normas",
+    "q": "O encarregado (DPO) atua como:",
+    "options": [
+      "Firewall de rede",
+      "Canal de comunicação com titulares e ANPD",
+      "Gerente de projetos PMI",
+      "Auditor externo obrigatório da Receita"
+    ],
+    "a": 1,
+    "exp": "Encarregado = ponte com titulares/ANPD.",
+    "id": "q032"
+  },
+  {
+    "cat": "ti",
+    "topic": "normas",
+    "q": "Princípio da necessidade (LGPD) implica:",
+    "options": [
+      "Coletar o máximo de dados possível",
+      "Limitar o tratamento ao mínimo necessário para a finalidade",
+      "Publicar todos os dados",
+      "Não usar bases legais"
+    ],
+    "a": 1,
+    "exp": "Minimização/necessidade.",
+    "id": "q033"
+  },
+  {
+    "cat": "ti",
+    "topic": "governanca",
+    "q": "Governança de TI difere de gestão porque governança:",
+    "options": [
+      "Executa o service desk diário",
+      "Direciona, avalia e monitora (o que deve ser feito)",
+      "Substitui o PMBOK",
+      "É sinônimo de firewall"
+    ],
+    "a": 1,
+    "exp": "Governança = EDM; gestão = executar.",
+    "id": "q034"
+  },
+  {
+    "cat": "ti",
+    "topic": "governanca",
+    "q": "SLA é acordo entre:",
+    "options": [
+      "Times internos apenas",
+      "Provedor de serviço e cliente",
+      "Dois fornecedores externos sem cliente",
+      "Somente ANPD e controlador"
+    ],
+    "a": 1,
+    "exp": "SLA com o cliente.",
+    "id": "q035"
+  },
+  {
+    "cat": "ti",
+    "topic": "governanca",
+    "q": "OLA é acordo:",
+    "options": [
+      "Com o cliente final",
+      "Entre equipes/áreas internas que sustentam o SLA",
+      "Com a ANPD",
+      "De preço de hardware"
+    ],
+    "a": 1,
+    "exp": "OLA = operacional interno.",
+    "id": "q036"
+  },
+  {
+    "cat": "ti",
+    "topic": "governanca",
+    "q": "O objetivo principal da gestão de INCIDENTES é:",
+    "options": [
+      "Encontrar a causa raiz sempre",
+      "Restaurar o serviço o mais rápido possível",
+      "Aprovar mudanças no CAB",
+      "Calcular CPI"
+    ],
+    "a": 1,
+    "exp": "Incidente = restaurar serviço.",
+    "id": "q037"
+  },
+  {
+    "cat": "ti",
+    "topic": "governanca",
+    "q": "Gestão de PROBLEMAS busca:",
+    "options": [
+      "Restaurar em 5 minutos sem análise",
+      "Causa raiz e prevenção de recorrência",
+      "Assinar SLA novo",
+      "Ignorar workarounds"
+    ],
+    "a": 1,
+    "exp": "Problema = causa raiz / known error.",
+    "id": "q038"
+  },
+  {
+    "cat": "ti",
+    "topic": "governanca",
+    "q": "Uma mudança EMERGENCIAL no ITIL é:",
+    "options": [
+      "Sempre pré-aprovada como padrão",
+      "Implementada com processo acelerado por urgência de risco/impacto",
+      "Proibida em produção",
+      "Igual a requisição de serviço"
+    ],
+    "a": 1,
+    "exp": "Emergency change com trâmite acelerado.",
+    "id": "q039"
+  },
+  {
+    "cat": "ti",
+    "topic": "governanca",
+    "q": "Catálogo de serviços contém tipicamente:",
+    "options": [
+      "Apenas código-fonte",
+      "Serviços disponíveis ao usuário, como solicitar e níveis esperados",
+      "Somente riscos de projeto",
+      "Lista de multas LGPD"
+    ],
+    "a": 1,
+    "exp": "Catálogo = oferta visível de serviços.",
+    "id": "q040"
+  },
+  {
+    "cat": "ti",
+    "topic": "governanca",
+    "q": "Melhoria contínua associa-se ao ciclo:",
+    "options": [
+      "Waterfall puro sem feedback",
+      "PDCA / continual improvement",
+      "Somente início do projeto",
+      "Backup 3-2-1 apenas"
+    ],
+    "a": 1,
+    "exp": "PDCA e melhoria contínua.",
+    "id": "q041"
+  },
+  {
+    "cat": "ti",
+    "topic": "frameworks",
+    "q": "O ITIL é melhor descrito como:",
+    "options": [
+      "Norma certificável de SGSI",
+      "Conjunto de boas práticas de gestão de serviços de TI",
+      "Metodologia exclusiva de desenvolvimento ágil",
+      "Lei de proteção de dados"
+    ],
+    "a": 1,
+    "exp": "ITIL = service management practices.",
+    "id": "q042"
+  },
+  {
+    "cat": "ti",
+    "topic": "frameworks",
+    "q": "No ITIL v3, a etapa Service Operation inclui tipicamente:",
+    "options": [
+      "Apenas estratégia financeira",
+      "Incidentes, problemas, eventos, requisições e acesso",
+      "Somente design de SLA",
+      "Encerramento de portfólio"
+    ],
+    "a": 1,
+    "exp": "Operation = dia a dia do serviço.",
+    "id": "q043"
+  },
+  {
+    "cat": "ti",
+    "topic": "frameworks",
+    "q": "COBIT foca principalmente em:",
+    "options": [
+      "Diagramação de rede física",
+      "Governança e gestão corporativa de TI alinhada ao negócio",
+      "Editoração de texto",
+      "Criptografia de disco apenas"
+    ],
+    "a": 1,
+    "exp": "COBIT = governança/gestão de TI.",
+    "id": "q044"
+  },
+  {
+    "cat": "ti",
+    "topic": "frameworks",
+    "q": "No COBIT, a separação EDM × PBRM significa:",
+    "options": [
+      "Evaluate-Direct-Monitor (governança) × Plan-Build-Run-Monitor (gestão)",
+      "Apenas backup",
+      "Somente redes",
+      "ISO 27001 PDCA idêntico"
+    ],
+    "a": 0,
+    "exp": "EDM governança; PBRM gestão.",
+    "id": "q045"
+  },
+  {
+    "cat": "ti",
+    "topic": "frameworks",
+    "q": "Qual combinação está mais coerente?",
+    "options": [
+      "ITIL para serviços; COBIT para governança; 27001 para SGSI; PMBOK para projetos",
+      "ITIL para LGPD; COBIT para HTML",
+      "PMBOK para incidentes de rede; ITIL para WBS",
+      "27001 para portfólio de projetos"
+    ],
+    "a": 0,
+    "exp": "Frameworks complementares nos seus domínios.",
+    "id": "q046"
+  },
+  {
+    "cat": "ti",
+    "topic": "frameworks",
+    "q": "Um dos princípios do COBIT 5 é:",
+    "options": [
+      "Misturar governança e gestão no mesmo papel sempre",
+      "Separar governança de gestão",
+      "Eliminar stakeholders",
+      "Proibir métricas"
+    ],
+    "a": 1,
+    "exp": "Separar governança de gestão.",
+    "id": "q047"
+  },
+  {
+    "cat": "ti",
+    "topic": "frameworks",
+    "q": "No ITIL 4, \"focus on value\" é:",
+    "options": [
+      "Um guiding principle",
+      "Uma lei federal",
+      "Um tipo de criptografia",
+      "Um grupo de processos PMI"
+    ],
+    "a": 0,
+    "exp": "Guiding principles do ITIL 4.",
+    "id": "q048"
+  },
+  {
+    "cat": "ti",
+    "topic": "gestao",
+    "q": "PETI/PDTI serve para:",
+    "options": [
+      "Substituir o firewall",
+      "Alinhar iniciativas de TI à estratégia e planejar entregas",
+      "Aprovar mudanças emergenciais no CAB",
+      "Definir RPO técnico apenas"
+    ],
+    "a": 1,
+    "exp": "Planejamento estratégico/diretor de TI.",
+    "id": "q049"
+  },
+  {
+    "cat": "ti",
+    "topic": "gestao",
+    "q": "Gestão de portfólio de aplicações pode decidir:",
+    "options": [
+      "Apenas a cor do logo",
+      "Investir, manter, racionalizar ou aposentar sistemas",
+      "Eliminar a LGPD",
+      "Trocar o PMI pelo ITIL"
+    ],
+    "a": 1,
+    "exp": "Decisões de ciclo de vida de sistemas.",
+    "id": "q050"
+  },
+  {
+    "cat": "ti",
+    "topic": "gestao",
+    "q": "Transformação digital implica principalmente:",
+    "options": [
+      "Comprar um software e manter processos iguais",
+      "Mudança de processos, cultura e geração de valor com tecnologia",
+      "Desligar a governança",
+      "Ignorar segurança"
+    ],
+    "a": 1,
+    "exp": "Mais que informatizar o papel.",
+    "id": "q051"
+  },
+  {
+    "cat": "ti",
+    "topic": "gestao",
+    "q": "Níveis de maturidade (ideia CMMI) evoluem de:",
+    "options": [
+      "Otimizado para ad hoc",
+      "Ad hoc/inicial → gerenciado → definido → quantificado → em otimização",
+      "Somente 0 ou 1",
+      "Sem relação com processos"
+    ],
+    "a": 1,
+    "exp": "Escala clássica de maturidade.",
+    "id": "q052"
+  },
+  {
+    "cat": "ti",
+    "topic": "gestao",
+    "q": "Um KPI de TI adequado ao cargo seria:",
+    "options": [
+      "Cor preferida do mouse",
+      "% de incidentes resolvidos no prazo do SLA",
+      "Altura do rack",
+      "Marca da caneta da prova"
+    ],
+    "a": 1,
+    "exp": "Indicadores de desempenho de serviço.",
+    "id": "q053"
+  },
+  {
+    "cat": "pt",
+    "topic": "gramatica",
+    "q": "Assinale a alternativa em que a concordância está adequada à norma-padrão:",
+    "options": [
+      "Fazem dois anos que ele saiu.",
+      "Faz dois anos que ele saiu.",
+      "Haviam muitas pessoas na sala.",
+      "Existe problemas graves."
+    ],
+    "a": 1,
+    "exp": "\"Fazer\" indicando tempo é impessoal: faz dois anos.",
+    "id": "q054"
+  },
+  {
+    "cat": "pt",
+    "topic": "gramatica",
+    "q": "Em \"Assisti ao filme\", a regência de assistir (ver) exige:",
+    "options": [
+      "Objeto direto sem preposição",
+      "Preposição a",
+      "Preposição de",
+      "Preposição com"
+    ],
+    "a": 1,
+    "exp": "Assistir no sentido de ver: assistir a.",
+    "id": "q055"
+  },
+  {
+    "cat": "pt",
+    "topic": "gramatica",
+    "q": "A crase está correta em:",
+    "options": [
+      "Fui a Bahia ontem.",
+      "Fui à Bahia ontem.",
+      "Refiro-me a aquelas ideias.",
+      "Entreguei o documento a ela com crase: à ela."
+    ],
+    "a": 1,
+    "exp": "à Bahia = a + a (artigo do topônimo feminino com artigo).",
+    "id": "q056"
+  },
+  {
+    "cat": "pt",
+    "topic": "gramatica",
+    "q": "Não se deve separar com vírgula:",
+    "options": [
+      "O aposto",
+      "O vocativo",
+      "Sujeito e predicado",
+      "Adjunto adverbial deslocado longo"
+    ],
+    "a": 2,
+    "exp": "Vírgula entre sujeito e verbo é erro clássico.",
+    "id": "q057"
+  },
+  {
+    "cat": "pt",
+    "topic": "gramatica",
+    "q": "A negação de \"Se chove, a rua molha\" logicamente (e em paralelismo com RL) equivale a:",
+    "options": [
+      "Se não chove, a rua não molha",
+      "Chove e a rua não molha",
+      "Não chove ou a rua molha",
+      "Se a rua molha, chove"
+    ],
+    "a": 1,
+    "exp": "¬(p→q) = p ∧ ¬q.",
+    "id": "q058"
+  },
+  {
+    "cat": "pt",
+    "topic": "coesao",
+    "q": "Coesão referencial ocorre quando:",
+    "options": [
+      "Há contradição de ideias",
+      "Pronomes/expressões retomam termos anteriores",
+      "O texto muda de tema sem aviso",
+      "Só há adjetivos"
+    ],
+    "a": 1,
+    "exp": "Referenciação mantém coesão.",
+    "id": "q059"
+  },
+  {
+    "cat": "pt",
+    "topic": "ortografia",
+    "q": "Assinale a grafia correta no sentido de \"motivo\":",
+    "options": [
+      "Não sei o por quê.",
+      "Não sei o porquê.",
+      "Não sei porque.",
+      "Não sei por que de."
+    ],
+    "a": 1,
+    "exp": "porquê = substantivo (o motivo).",
+    "id": "q060"
+  },
+  {
+    "cat": "pt",
+    "topic": "ortografia",
+    "q": "\"Por que\" separado e sem acento usa-se tipicamente em:",
+    "options": [
+      "Substantivo com artigo",
+      "Início de pergunta ou \"por que motivo\"",
+      "Resposta causal no meio da frase sempre como uma palavra",
+      "Sinônimo de portanto"
+    ],
+    "a": 1,
+    "exp": "por que = em perguntas / \"por qual razão\".",
+    "id": "q061"
+  },
+  {
+    "cat": "pt",
+    "topic": "redacao",
+    "q": "Em redação de comunicados oficiais, predomina:",
+    "options": [
+      "Gírias e 1ª pessoa informal",
+      "Clareza, objetividade e impessoalidade",
+      "Ambiguidade proposital",
+      "Ironia"
+    ],
+    "a": 1,
+    "exp": "Padrão formal administrativo.",
+    "id": "q062"
+  },
+  {
+    "cat": "pt",
+    "topic": "morfologia",
+    "q": "Em \"Ele está doente\", o predicativo indica tipicamente:",
+    "options": [
+      "Relação objetiva de matéria",
+      "Estado",
+      "Agente da passiva",
+      "Objeto indireto"
+    ],
+    "a": 1,
+    "exp": "\"doente\" como estado.",
+    "id": "q063"
+  },
+  {
+    "cat": "pt",
+    "topic": "sintaxe",
+    "q": "O termo que completa o sentido de um nome (substantivo/adjetivo/advérbio) chamando-se classicamente:",
+    "options": [
+      "Objeto direto",
+      "Complemento nominal",
+      "Agente da passiva",
+      "Vocativo"
+    ],
+    "a": 1,
+    "exp": "Complemento nominal completa nome.",
+    "id": "q064"
+  },
+  {
+    "cat": "pt",
+    "topic": "sintaxe",
+    "q": "Em voz passiva analítica, o agente da passiva é introduzido tipicamente por:",
+    "options": [
+      "para",
+      "por/de",
+      "sem",
+      "entre"
+    ],
+    "a": 1,
+    "exp": "por (agente da passiva).",
+    "id": "q065"
+  },
+  {
+    "cat": "pt",
+    "topic": "interpretacao",
+    "q": "Na interpretação de texto em prova, o erro mais comum é:",
+    "options": [
+      "Buscar a ideia central",
+      "Levar conhecimento externo que o texto não autoriza",
+      "Observar conectores",
+      "Relacionar pronomes aos referentes"
+    ],
+    "a": 1,
+    "exp": "Ficar no que o texto diz/permite.",
+    "id": "q066"
+  },
+  {
+    "cat": "pt",
+    "topic": "pontuacao",
+    "q": "O aposto deve ser, em regra:",
+    "options": [
+      "Jamais separado",
+      "Isolado por vírgulas (ou travessões/parênteses)",
+      "Sempre entre aspas",
+      "Sempre no fim do texto"
+    ],
+    "a": 1,
+    "exp": "Aposto isolado por pontuação.",
+    "id": "q067"
+  },
+  {
+    "cat": "pt",
+    "topic": "pronomes",
+    "q": "Há próclise obrigatória, em regra, com:",
+    "options": [
+      "Início absoluto de frase formal antiga apenas",
+      "Palavras atrativas (não, que, quando, ninguém...)",
+      "Somente infinitivo",
+      "Nunca com verbos"
+    ],
+    "a": 1,
+    "exp": "Palavras atrativas puxam o pronome.",
+    "id": "q068"
+  },
+  {
+    "cat": "rl",
+    "topic": "proposicional",
+    "q": "A condicional p → q é FALSA somente quando:",
+    "options": [
+      "p é F e q é F",
+      "p é V e q é F",
+      "p é F e q é V",
+      "p e q são V"
+    ],
+    "a": 1,
+    "exp": "Único caso falso: V→F.",
+    "id": "q069"
+  },
+  {
+    "cat": "rl",
+    "topic": "proposicional",
+    "q": "A contrapositiva de p → q é:",
+    "options": [
+      "q → p",
+      "¬p → ¬q",
+      "¬q → ¬p",
+      "p ∧ ¬q"
+    ],
+    "a": 2,
+    "exp": "Contrapositiva: ¬q → ¬p (equivalente).",
+    "id": "q070"
+  },
+  {
+    "cat": "rl",
+    "topic": "proposicional",
+    "q": "A negação de p ∧ q é:",
+    "options": [
+      "¬p ∧ ¬q",
+      "¬p ∨ ¬q",
+      "p ∨ q",
+      "p → q"
+    ],
+    "a": 1,
+    "exp": "De Morgan: ¬(p∧q)=¬p∨¬q.",
+    "id": "q071"
+  },
+  {
+    "cat": "rl",
+    "topic": "proposicional",
+    "q": "A negação de \"Todo A é B\" é:",
+    "options": [
+      "Nenhum A é B",
+      "Todo A não é B",
+      "Existe A que não é B",
+      "Algum B não é A"
+    ],
+    "a": 2,
+    "exp": "Negação de universal afirmativa: particular negativa.",
+    "id": "q072"
+  },
+  {
+    "cat": "rl",
+    "topic": "proposicional",
+    "q": "A negação de \"Algum A é B\" é:",
+    "options": [
+      "Algum A não é B",
+      "Nenhum A é B",
+      "Todo A é B",
+      "Todo A não é B (ambíguo) / nenhum"
+    ],
+    "a": 1,
+    "exp": "Negação de particular afirmativa: nenhum A é B.",
+    "id": "q073"
+  },
+  {
+    "cat": "rl",
+    "topic": "argumentacao",
+    "q": "Modus ponens corresponde a:",
+    "options": [
+      "p→q; ¬q ∴ ¬p",
+      "p→q; p ∴ q",
+      "p→q; q ∴ p",
+      "p∨q; ¬p ∴ ¬q"
+    ],
+    "a": 1,
+    "exp": "Afirma o antecedente.",
+    "id": "q074"
+  },
+  {
+    "cat": "rl",
+    "topic": "argumentacao",
+    "q": "Modus tollens corresponde a:",
+    "options": [
+      "p→q; p ∴ q",
+      "p→q; ¬q ∴ ¬p",
+      "p∧q ∴ p",
+      "p∨q ∴ p"
+    ],
+    "a": 1,
+    "exp": "Nega o consequente.",
+    "id": "q075"
+  },
+  {
+    "cat": "rl",
+    "topic": "diagramas",
+    "q": "Em um diagrama de Venn, \"Nenhum A é B\" significa:",
+    "options": [
+      "Interseção A∩B vazia",
+      "A contido em B",
+      "B contido em A",
+      "A = B"
+    ],
+    "a": 0,
+    "exp": "Conjuntos disjuntos.",
+    "id": "q076"
+  },
+  {
+    "cat": "rl",
+    "topic": "aritmetica",
+    "q": "15% de 200 é:",
+    "options": [
+      "15",
+      "20",
+      "30",
+      "45"
+    ],
+    "a": 2,
+    "exp": "0,15*200=30.",
+    "id": "q077"
+  },
+  {
+    "cat": "rl",
+    "topic": "aritmetica",
+    "q": "Se a razão de homens para mulheres em uma sala é 2:3 e há 30 pessoas, o número de mulheres é:",
+    "options": [
+      "10",
+      "12",
+      "18",
+      "20"
+    ],
+    "a": 2,
+    "exp": "2+3=5 partes; 30/5=6; mulheres 3*6=18.",
+    "id": "q078"
+  },
+  {
+    "cat": "rl",
+    "topic": "algebra",
+    "q": "A solução de 2x + 6 = 18 é:",
+    "options": [
+      "x=4",
+      "x=6",
+      "x=12",
+      "x=3"
+    ],
+    "a": 1,
+    "exp": "2x=12 → x=6.",
+    "id": "q079"
+  },
+  {
+    "cat": "rl",
+    "topic": "sequencias",
+    "q": "Na sequência 2, 6, 12, 20, 30, … o próximo termo é:",
+    "options": [
+      "36",
+      "40",
+      "42",
+      "44"
+    ],
+    "a": 2,
+    "exp": "Diferenças +4,+6,+8,+10 → próximo +12 = 42.",
+    "id": "q080"
+  },
+  {
+    "cat": "rl",
+    "topic": "associacao",
+    "q": "Em problemas de associação (pessoas × atributos), a técnica mais eficiente costuma ser:",
+    "options": [
+      "Chutar a primeira alternativa",
+      "Montar tabela de possibilidades e eliminar contradições",
+      "Ignorar premissas",
+      "Somar as idades"
+    ],
+    "a": 1,
+    "exp": "Tabela verdade/associação.",
+    "id": "q081"
+  },
+  {
+    "cat": "rl",
+    "topic": "proposicional",
+    "q": "p ↔ q é verdadeira quando:",
+    "options": [
+      "p e q têm o mesmo valor lógico",
+      "Apenas se p é V",
+      "Apenas se q é F",
+      "Nunca"
+    ],
+    "a": 0,
+    "exp": "Bicondicional: mesmos valores.",
+    "id": "q082"
+  },
+  {
+    "cat": "rl",
+    "topic": "geometria",
+    "q": "Em um triângulo retângulo com catetos 3 e 4, a hipotenusa é:",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "12"
+    ],
+    "a": 0,
+    "exp": "Pitágoras 9+16=25 → 5.",
+    "id": "q083"
+  },
+  {
+    "cat": "ti",
+    "topic": "seguranca",
+    "q": "O princípio do menor privilégio determina que o usuário receba:",
+    "options": [
+      "Acesso total por padrão",
+      "Apenas as permissões necessárias à função",
+      "Sempre acesso de administrador",
+      "Acesso anônimo"
+    ],
+    "a": 1,
+    "exp": "Least privilege.",
+    "id": "q084"
+  },
+  {
+    "cat": "ti",
+    "topic": "seguranca",
+    "q": "MFA (autenticação multifator) combina tipicamente:",
+    "options": [
+      "Dois logins iguais",
+      "Algo que você sabe + tem e/ou é",
+      "Apenas biometria sem senha sempre",
+      "Hash de senha apenas"
+    ],
+    "a": 1,
+    "exp": "Fatores independentes.",
+    "id": "q085"
+  },
+  {
+    "cat": "ti",
+    "topic": "governanca",
+    "q": "Prioridade de um incidente combina tipicamente:",
+    "options": [
+      "Cor do alerta",
+      "Impacto × urgência",
+      "Somente o cargo do usuário",
+      "CPI do projeto"
+    ],
+    "a": 1,
+    "exp": "Impacto e urgência.",
+    "id": "q086"
+  },
+  {
+    "cat": "ti",
+    "topic": "pmbok",
+    "q": "Qual NÃO é área de conhecimento citada no edital de TI?",
+    "options": [
+      "Escopo",
+      "Prazo",
+      "Marketing digital",
+      "Riscos"
+    ],
+    "a": 2,
+    "exp": "Edital: escopo, prazo, custo, qualidade, riscos, comunicação, aquisições.",
+    "id": "q087"
+  },
+  {
+    "cat": "ti",
+    "topic": "normas",
+    "q": "A ANPD é:",
+    "options": [
+      "Órgão de certificação ISO",
+      "Autoridade Nacional de Proteção de Dados",
+      "Framework ITIL",
+      "PMO do IBGE"
+    ],
+    "a": 1,
+    "exp": "Autoridade da LGPD.",
+    "id": "q088"
+  },
+  {
+    "cat": "ti",
+    "topic": "frameworks",
+    "q": "Known error no ITIL é:",
+    "options": [
+      "Incidente sem ticket",
+      "Problema com causa documentada e workaround",
+      "Mudança padrão",
+      "SLA vencido"
+    ],
+    "a": 1,
+    "exp": "Known error database.",
+    "id": "q089"
+  },
+  {
+    "cat": "ti",
+    "topic": "gestao",
+    "q": "Shadow IT refere-se a:",
+    "options": [
+      "Backup em nuvem oficial",
+      "Sistemas/uso de TI fora da governança oficial",
+      "Datacenter principal",
+      "CAB emergencial"
+    ],
+    "a": 1,
+    "exp": "TI sombra sem controle.",
+    "id": "q090"
+  },
+  {
+    "cat": "ti",
+    "topic": "riscos",
+    "q": "Explorar, no contexto de riscos POSITIVOS, significa:",
+    "options": [
+      "Eliminar a oportunidade",
+      "Garantir que a oportunidade se concretize",
+      "Transferir a ameaça",
+      "Aceitar passivamente"
+    ],
+    "a": 1,
+    "exp": "Explore opportunity.",
+    "id": "q091"
+  },
+  {
+    "cat": "pt",
+    "topic": "regencia",
+    "q": "Em \"Ele implica em erros\", para o sentido de \"acarretar\", a regência culta prefere:",
+    "options": [
+      "implica em erros",
+      "implica erros (sem preposição)",
+      "implica com erros",
+      "implica para erros"
+    ],
+    "a": 1,
+    "exp": "Implicar = acarretar: VTD sem \"em\".",
+    "id": "q092"
+  },
+  {
+    "cat": "rl",
+    "topic": "proposicional",
+    "q": "Se \"Se estudo, passo\" e \"Não passo\", conclui-se por modus tollens:",
+    "options": [
+      "Estudo",
+      "Não estudo",
+      "Passo",
+      "Estudo e passo"
+    ],
+    "a": 1,
+    "exp": "¬q e p→q ⇒ ¬p.",
+    "id": "q093"
+  }
+]

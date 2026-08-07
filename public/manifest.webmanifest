@@ -1,0 +1,24 @@
+{
+  "name": "IBGE AC-TI Estudo",
+  "short_name": "IBGE AC-TI",
+  "description": "Estudo Analista Censitário Tecnologia da Informação — PSS IBGE 2026",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b1016",
+  "theme_color": "#0f1419",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

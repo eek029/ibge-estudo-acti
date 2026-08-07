@@ -1,0 +1,20 @@
+# Cole no /etc/caddy/Caddyfile e troque o host pelo subdomínio criado.
+# Depois: sudo systemctl reload caddy
+
+# Exemplo: ibge.eek029.xyz
+ibge.eek029.xyz {
+	root * /home/ubuntu/projetos/ibge-estudo/public
+	encode gzip
+	file_server
+	try_files {path} /index.html
+
+	header {
+		# estudo pessoal — evita cache agressivo de HTML/JS
+		Cache-Control "public, max-age=120"
+	}
+
+	# Opcional: proteger com senha (descomente e gere hash com `caddy hash-password`)
+	# basicauth {
+	# 	henrique JDJh...hash...
+	# }
+}
