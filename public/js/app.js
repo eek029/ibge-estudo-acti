@@ -44,14 +44,27 @@
   }
 
   function authHeaders() {
-    return {
-      Authorization: "Bearer " + state.config.token,
-      "Content-Type": "application/json",
-    };
+    const h = { "Content-Type": "application/json" };
+    if (state.config.token) h.Authorization = "Bearer " + state.config.token;
+    return h;
+  }
+
+  async function ensureAuth() {
+    try {
+      const res = await fetch("/api/auth/me", { credentials: "include", cache: "no-store" });
+      if (res.status === 401) {
+        location.replace("/login.html");
+        return false;
+      }
+      return res.ok;
+    } catch {
+      // if API down but page loaded via forward_auth, continue offline-ish
+      return true;
+    }
   }
 
   async function syncPullAndMerge() {
-    if (!state.config.syncEnabled || !state.config.token) {
+    if (!state.config.syncEnabled) {
       state.sync.status = "local";
       updateSyncPill();
       return;
@@ -62,9 +75,14 @@
       const push = await fetch(state.config.apiBase + "/progress/merge", {
         method: "POST",
         headers: authHeaders(),
+        credentials: "include",
         body: JSON.stringify(state.progress),
         cache: "no-store",
       });
+      if (push.status === 401) {
+        location.replace("/login.html");
+        return;
+      }
       if (!push.ok) throw new Error("HTTP " + push.status);
       const body = await push.json();
       if (body.progress) {
@@ -83,7 +101,7 @@
   }
 
   function scheduleSyncPush() {
-    if (!state.config.syncEnabled || !state.config.token) return;
+    if (!state.config.syncEnabled) return;
     if (state.sync.timer) clearTimeout(state.sync.timer);
     state.sync.timer = setTimeout(syncPullAndMerge, 500);
   }
@@ -105,25 +123,32 @@
 
   /* ---------- boot ---------- */
   async function boot() {
-    const [lessons, questions, schedule, biblioteca, config] = await Promise.all([
-      fetch("data/lessons.json").then((r) => r.json()),
-      fetch("data/questions.json").then((r) => r.json()),
-      fetch("data/schedule.json").then((r) => r.json()),
-      fetch("data/biblioteca.json").then((r) => r.json()),
-      fetch("data/config.json")
-        .then((r) => (r.ok ? r.json() : {}))
-        .catch(() => ({})),
+    const config = await fetch("data/config.json")
+      .then((r) => (r.ok ? r.json() : {}))
+      .catch(() => ({}));
+    state.config = Object.assign(state.config, config || {});
+
+    if (state.config.authRequired !== false) {
+      const ok = await ensureAuth();
+      if (!ok) return;
+    }
+
+    const [lessons, questions, schedule, biblioteca] = await Promise.all([
+      fetch("data/lessons.json", { credentials: "include" }).then((r) => r.json()),
+      fetch("data/questions.json", { credentials: "include" }).then((r) => r.json()),
+      fetch("data/schedule.json", { credentials: "include" }).then((r) => r.json()),
+      fetch("data/biblioteca.json", { credentials: "include" }).then((r) => r.json()),
     ]);
     state.lessons = lessons;
     state.questions = questions;
     state.schedule = schedule;
     state.biblioteca = biblioteca;
-    state.config = Object.assign(state.config, config || {});
     if (biblioteca.editais && biblioteca.editais.length) state.libTab = "editais";
     else if (biblioteca.pt) state.libTab = "pt";
 
     bindNav();
     bindGlobalKeys();
+    bindLogout();
     updateSyncPill();
     await syncPullAndMerge();
 
@@ -146,6 +171,17 @@
     }
   }
 
+  function bindLogout() {
+    const btn = document.getElementById("btn-logout");
+    if (!btn) return;
+    btn.onclick = async () => {
+      try {
+        await fetch("/api/auth/logout", { method: "POST", credentials: "include" });
+      } catch (_) {}
+      location.replace("/login.html");
+    };
+  }
+
   function renderAll() {
     renderHome();
     renderCronograma();
@@ -155,6 +191,23 @@
     renderBiblioteca();
     renderProgresso();
     refreshStats();
+    scheduleReveals();
+  }
+
+  function scheduleReveals() {
+    const cards = document.querySelectorAll(".view:not(.hidden) .card.reveal");
+    const reduce =
+      window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    cards.forEach((el, i) => {
+      if (reduce) {
+        el.classList.add("in");
+        return;
+      }
+      el.classList.remove("in");
+      // small stagger — only first 6 to avoid long waits
+      const delay = Math.min(i, 5) * 45;
+      setTimeout(() => el.classList.add("in"), 20 + delay);
+    });
   }
 
   /* ---------- nav ---------- */
@@ -197,6 +250,7 @@
     if (name === "cronograma") renderCronograma();
     if (name === "biblioteca") renderBiblioteca();
     window.scrollTo(0, 0);
+    scheduleReveals();
   }
 
   function todayISO() {
@@ -819,11 +873,12 @@
       state.progress = defaultProgress();
       touchProgress();
       saveProgressLocal();
-      if (state.config.syncEnabled && state.config.token) {
+      if (state.config.syncEnabled) {
         try {
           await fetch(state.config.apiBase + "/progress", {
             method: "PUT",
             headers: authHeaders(),
+            credentials: "include",
             body: JSON.stringify(state.progress),
           });
         } catch (_) {}

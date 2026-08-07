@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#0f1419" />
-  <meta name="description" content="Estudo PSS IBGE 02/2026 — Analista Censitário Tecnologia da Informação. Aulas, quizzes, cronograma e materiais." />
+  <meta name="theme-color" content="#0a0d12" />
+  <meta name="description" content="Estudo PSS IBGE 02/2026 — Analista Censitário Tecnologia da Informação." />
   <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="robots" content="noindex,nofollow" />
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="icon" href="icons/icon-192.png" />
   <link rel="apple-touch-icon" href="icons/icon-192.png" />
@@ -27,50 +28,54 @@
     <div class="header-right">
       <div class="meta-pill">Prova <strong>30/08</strong></div>
       <div class="meta-pill sync-pill" id="sync-pill" title="Sincronização">…</div>
+      <button type="button" class="meta-pill" id="btn-logout" title="Sair">Sair</button>
     </div>
   </header>
 
   <main>
-    <!-- HOME -->
     <section id="view-home" class="view">
-      <div class="card">
+      <div class="card reveal">
+        <div class="eyebrow">PSS 02/2026 · Avalia</div>
         <h1>Analista Censitário · TI</h1>
-        <p class="muted small">PSS IBGE 02/2026 · Avalia · 60 questões · corte ≥40% e ≥1 em cada disciplina.</p>
-        <div class="grid grid-3" style="margin-top:1rem">
+        <p class="muted small">60 questões · corte ≥40% e ≥1 ponto em cada disciplina. Estudo noturno pensado para foco, não para distração.</p>
+        <div class="grid grid-3" style="margin-top:1.1rem">
           <div class="stat"><div class="n" id="stat-days">—</div><div class="l">dias até a prova</div></div>
           <div class="stat"><div class="n" id="stat-lessons">—</div><div class="l">aulas lidas</div></div>
           <div class="stat"><div class="n" id="stat-quiz">—</div><div class="l">acertos nos quizzes</div></div>
         </div>
         <div class="hero-actions">
-          <button class="btn" type="button" id="btn-hoje">▶ Estudar hoje</button>
+          <button class="btn" type="button" id="btn-hoje">
+            <span class="btn-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="6 4 20 12 6 20 6 4"/></svg></span>
+            Estudar hoje
+          </button>
           <button class="btn secondary" type="button" data-go="quiz">Questionário</button>
           <button class="btn ghost" type="button" data-go="flash">Flashcards</button>
         </div>
       </div>
 
-      <div class="card" id="hoje-card">
+      <div class="card reveal" id="hoje-card">
         <h2>Hoje no plano</h2>
         <div id="hoje-content" class="muted">Carregando…</div>
       </div>
 
-      <div class="card">
-        <h2>Atalhos rápidos</h2>
+      <div class="card reveal">
+        <h2>Atalhos</h2>
         <div class="grid grid-2">
-          <button type="button" class="btn secondary block" data-go="aulas">📖 Aulas de TI / PT / RL</button>
-          <button type="button" class="btn secondary block" data-go="biblioteca">📚 Biblioteca PDF</button>
-          <button type="button" class="btn secondary block" id="btn-simulado60">⏱ Simulado 60 questões</button>
-          <button type="button" class="btn secondary block" data-go="cronograma">🗓 Cronograma até 29/08</button>
+          <button type="button" class="btn secondary block" data-go="aulas">Aulas de TI / PT / RL</button>
+          <button type="button" class="btn secondary block" data-go="biblioteca">Biblioteca PDF</button>
+          <button type="button" class="btn secondary block" id="btn-simulado60">Simulado 60 questões</button>
+          <button type="button" class="btn secondary block" data-go="cronograma">Cronograma até 29/08</button>
         </div>
-        <p class="small muted" style="margin-top:.85rem">
-          Prioridade: <strong>Específicos TI (35)</strong> · depois PT (15) e RL (10).  
-          Material de Geografia/Ética/Word do nível médio <em>não</em> é foco desta prova.
+        <p class="small muted" style="margin-top:.9rem">
+          Prioridade: <strong style="color:var(--brass)">Específicos TI (35)</strong> · depois PT (15) e RL (10).
+          Geografia/Ética/Word do material médio não são foco desta prova.
         </p>
       </div>
     </section>
 
-    <!-- CRONOGRAMA -->
     <section id="view-cronograma" class="view hidden">
-      <div class="card">
+      <div class="card reveal">
+        <div class="eyebrow">Até a véspera</div>
         <h1>Cronograma</h1>
         <p class="muted small" id="crono-meta"></p>
         <div class="progress" style="margin:1rem 0"><i id="crono-bar"></i></div>
@@ -79,11 +84,11 @@
       <div id="crono-list"></div>
     </section>
 
-    <!-- AULAS -->
     <section id="view-aulas" class="view hidden">
-      <div class="card" id="lesson-index">
+      <div class="card reveal" id="lesson-index">
+        <div class="eyebrow">Anexo III</div>
         <h1>Aulas</h1>
-        <p class="muted small">Conteúdo alinhado ao Anexo III. Marque como lida ao terminar.</p>
+        <p class="muted small">Conteúdo alinhado ao edital. Marque como lida ao terminar.</p>
         <div class="filters" id="lesson-filters">
           <button type="button" class="chip active" data-cat="all">Todas</button>
           <button type="button" class="chip" data-cat="ti">TI</button>
@@ -95,7 +100,7 @@
       </div>
       <div class="card hidden" id="lesson-reader">
         <div class="btn-row" style="margin-top:0">
-          <button type="button" class="btn secondary" id="btn-back-lessons">← Lista</button>
+          <button type="button" class="btn secondary" id="btn-back-lessons">Lista</button>
           <button type="button" class="btn" id="btn-mark-read">Marcar lida</button>
           <button type="button" class="btn ghost" id="btn-lesson-quiz">Quiz do tema</button>
         </div>
@@ -103,11 +108,11 @@
       </div>
     </section>
 
-    <!-- QUIZ -->
     <section id="view-quiz" class="view hidden">
-      <div class="card" id="quiz-setup">
+      <div class="card reveal" id="quiz-setup">
+        <div class="eyebrow">Treino ativo</div>
         <h1>Questionários</h1>
-        <p class="muted small">Gabarito com explicação. No teclado: <kbd>1</kbd>–<kbd>5</kbd> escolhe · <kbd>Enter</kbd> próxima.</p>
+        <p class="muted small">Gabarito com explicação. Teclado: 1–5 escolhe · Enter próxima.</p>
         <div class="quiz-setup">
           <label for="quiz-mode">Modo</label>
           <select id="quiz-mode">
@@ -168,11 +173,11 @@
       </div>
     </section>
 
-    <!-- FLASHCARDS -->
     <section id="view-flash" class="view hidden">
-      <div class="card">
+      <div class="card reveal">
+        <div class="eyebrow">Revisão rápida</div>
         <h1>Flashcards</h1>
-        <p class="muted small">Toque no card para ver a resposta. Ideal para ITIL/COBIT/LGPD/PMBOK.</p>
+        <p class="muted small">Toque no card para ver a resposta. Ideal para ITIL, COBIT, LGPD e PMBOK.</p>
         <div class="quiz-setup">
           <label for="flash-cat">Baralho</label>
           <select id="flash-cat">
@@ -199,18 +204,18 @@
           </div>
         </div>
         <div class="btn-row">
-          <button type="button" class="btn secondary" id="btn-flash-prev">←</button>
+          <button type="button" class="btn secondary" id="btn-flash-prev">Anterior</button>
           <button type="button" class="btn" id="btn-flash-flip">Virar</button>
-          <button type="button" class="btn secondary" id="btn-flash-next">→</button>
+          <button type="button" class="btn secondary" id="btn-flash-next">Próximo</button>
         </div>
       </div>
     </section>
 
-    <!-- BIBLIOTECA -->
     <section id="view-biblioteca" class="view hidden">
-      <div class="card">
+      <div class="card reveal">
+        <div class="eyebrow">Materiais</div>
         <h1>Biblioteca PDF</h1>
-        <p class="muted small">Abra no visualizador integrado (com imagens). Editais oficiais + aulas PT/RL + compilados.</p>
+        <p class="muted small">Visualizador integrado. Editais oficiais + aulas PT/RL + compilados.</p>
         <div class="filters" id="lib-tabs"></div>
         <div class="filters">
           <input type="search" id="lib-search" placeholder="Buscar material…" autocomplete="off" />
@@ -219,9 +224,9 @@
       </div>
     </section>
 
-    <!-- PROGRESSO -->
     <section id="view-progresso" class="view hidden">
-      <div class="card">
+      <div class="card reveal">
+        <div class="eyebrow">Multi-dispositivo</div>
         <h1>Progresso</h1>
         <div class="grid grid-2">
           <div class="stat"><div class="n" id="p-lessons">0</div><div class="l">aulas concluídas</div></div>
@@ -246,16 +251,29 @@
     <a href="https://github.com/eek029/ibge-estudo-acti" target="_blank" rel="noopener">código no GitHub</a>
   </footer>
 
-  <!-- Bottom nav mobile -->
   <nav class="nav-bottom" id="nav-bottom" aria-label="Mobile">
-    <button type="button" data-view="home" class="active"><span class="ico">🏠</span>Início</button>
-    <button type="button" data-view="cronograma"><span class="ico">🗓</span>Plano</button>
-    <button type="button" data-view="aulas"><span class="ico">📖</span>Aulas</button>
-    <button type="button" data-view="quiz"><span class="ico">✅</span>Quiz</button>
-    <button type="button" data-view="biblioteca"><span class="ico">📚</span>PDFs</button>
+    <button type="button" data-view="home" class="active">
+      <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-5v-6H10v6H5a1 1 0 0 1-1-1v-9.5z"/></svg></span>
+      Início
+    </button>
+    <button type="button" data-view="cronograma">
+      <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M8 3.5v3M16 3.5v3M3.5 10h17"/></svg></span>
+      Plano
+    </button>
+    <button type="button" data-view="aulas">
+      <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5.5h11a2 2 0 0 1 2 2V19l-3-1.5L11 19V7.5a2 2 0 0 1 2-2"/><path d="M4 5.5v13.5l3-1.5 3 1.5"/></svg></span>
+      Aulas
+    </button>
+    <button type="button" data-view="quiz">
+      <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 11.5 11 13.5 15.5 9"/><circle cx="12" cy="12" r="8.5"/></svg></span>
+      Quiz
+    </button>
+    <button type="button" data-view="biblioteca">
+      <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 5.5h5.5A2.5 2.5 0 0 1 13 8v11.5H7.5A2.5 2.5 0 0 0 5 22"/><path d="M19 5.5h-5.5A2.5 2.5 0 0 0 11 8v11.5h5.5A2.5 2.5 0 0 1 19 22"/></svg></span>
+      PDFs
+    </button>
   </nav>
 
-  <!-- Overlays -->
   <div class="overlay hidden" id="overlay-day" role="dialog" aria-modal="true">
     <div class="sheet">
       <div class="sheet-head">

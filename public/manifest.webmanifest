@@ -4,8 +4,8 @@
   "description": "Estudo Analista Censitário Tecnologia da Informação — PSS IBGE 2026",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0b1016",
-  "theme_color": "#0f1419",
+  "background_color": "#0a0d12",
+  "theme_color": "#0a0d12",
   "lang": "pt-BR",
   "icons": [
     {
